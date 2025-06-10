@@ -1,0 +1,917 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+}
+header{
+    background: linear-gradient(to right , #c1dbb3 , #fff);
+    padding: 1rem 0;
+}
+.container1{
+   display: flex;
+   margin: auto;
+   justify-content: space-between;
+   align-items: center;
+   width: 92%;
+   height: 40px;
+   /* flex-wrap: wrap; */
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+    font-family: 'Nunito' , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+nav a:hover{
+    color: #f97a00;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+}
+#home{
+    background: linear-gradient(to right , #faedca,  #fff);
+    color: rgb(61, 59, 59);
+    height: 700px;
+    
+    
+}
+.home-content img{
+    border-radius: 50%;
+    /* width: 350px; */
+    margin-left: 900px;
+    margin-top: 180px;
+}
+.home-content{
+    position: relative;
+}
+.para{
+    font-size: 20px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -930px;
+    margin-top: 150px;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+}
+.para1{
+    font-size: 25px;
+    font-family: 'Poppins' ,Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -930px;
+    margin-top: 230px;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+}
+.color{
+    color: #f97a00;
+}
+.para2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin-left: -930px;
+    margin-top: 300px;
+    text-align: justify;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+    
+}
+.cv{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 250px;
+    font-weight: bold;
+    border: 2px solid #f97a00;
+    background-color: #f97a00;
+    border-radius: 12px;
+    box-shadow:  4px 4px 0 rgba(31, 31, 31, 0.5) , 0 6px 8px 0 rgba(0, 0, 0, 0.7);
+    width: 170px;
+    height: 50px; 
+}
+.cv a{
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+}
+.home-content img{ 
+    animation: pic 10s linear  infinite  ;
+
+}
+@keyframes pic {
+    
+    0%{
+        filter: blur(80%);
+        /* transform:rotatey('0deg'); */
+    }
+    25%{
+        filter: hue-rotate(70%);
+        
+    }
+    50%{
+        filter:opacity(40px);
+    }
+    75%{
+        
+        filter: grayscale(100%);
+    }
+    100%{
+        filter: brightness(300px);
+        
+        /* transform: rotatey(360deg); */
+    } 
+}
+.section{
+    text-align: center;
+    padding: 4rem , 2rem;
+    height: 500px;
+}
+.section-skill{
+    text-align: center;
+    padding: 4rem , 2rem;
+    height: 900px;
+}
+.bg-color{
+    background: linear-gradient(to right , #fae6b0,  #fff);
+    height: 500px;
+}
+.bg-color1{
+     background: linear-gradient(to right , #bbdaab,  #fff);
+    
+}
+#aboat{
+    padding: 5rem;
+}
+#aboat h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+}
+.flex-aboat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(65, 64, 64);
+}
+.flex-aboat #img{
+    border-radius: 50%;
+    margin-left: 200px;
+    border: 4px solid #88a877;
+    
+
+}
+.flex-aboat #h5{
+    text-align:justify;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    font-size: 15px;
+    margin-right: 110px;
+}
+#skill h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 1rem;
+
+}
+#skill #p{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 1.2rem;
+}
+.container{
+    height: 320px;
+    width: 1000px;
+    display: grid;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 160px;
+    position: relative;
+}
+.box{
+    font-size: 1rem;
+    color:rgb(65, 64, 64) ;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #88a877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); 
+}
+.box:hover{
+    transform: scale(1,1.1);
+    border: 5px solid rgba(240, 206, 53, 0.5);
+}
+#project #title{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 2rem;
+}
+#project #para5{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 2rem;
+}
+.project-container{
+    height: 400px;
+    /* width: 1000px; */
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 0px;
+}
+#project .card{
+    background-color: #f7a65b;
+    padding: 1.5rem 2rem;
+    margin: 0 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+}
+.card .pragraf{
+    text-align: justify;
+    font-size: 1rem
+}
+.card a{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 5rem;
+
+}
+.card a:hover{
+    color:#3a7e49;
+    text-decoration: underline;   
+}
+#contact h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 2rem;
+}
+#contact p{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 1.5rem;
+}
+.contact-adress{
+   text-align: center;
+}
+
+.contact-adress p{
+    display: inline-block;
+    font-size: 1px;
+    margin-bottom: 8px;
+}
+ .icon >ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: rgb(53, 52, 52);
+}
+.icon >ul a:hover{
+    color: #2c6337;
+}
+footer{
+    background: linear-gradient(to right , #b8d4a9 , #fff);
+    padding: 1rem 0;
+    text-align: center;
+    font-family:'Poppins', Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 1rem;
+}
+
+ @media screen and (max-width:1024px) {
+   *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+}
+header{
+    background: linear-gradient(to right , #c1dbb3 , #fff);
+    padding: 1rem 0;
+}
+.container1{
+   display: flex;
+   margin: auto;
+   justify-content: space-between;
+   align-items: center;
+   width: 92%;
+   height: 40px;
+   /* flex-wrap: wrap; */
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+    font-family: 'Nunito' , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+nav a:hover{
+    color: #f97a00;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+}
+#home{
+    background: linear-gradient(to right , #faedca,  #fff);
+    color: rgb(61, 59, 59);
+    height: 700px;
+    
+    
+}
+.home-content img{
+    border-radius: 50%;
+    /* width: 350px; */
+    margin-left: 900px;
+    margin-top: 180px;
+}
+.home-content{
+    position: relative;
+}
+.para{
+    font-size: 20px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -930px;
+    margin-top: 150px;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+}
+.para1{
+    font-size: 25px;
+    font-family: 'Poppins' ,Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -930px;
+    margin-top: 230px;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+}
+.color{
+    color: #f97a00;
+}
+.para2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin-left: -930px;
+    margin-top: 300px;
+    text-align: justify;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+    
+}
+.cv{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 250px;
+    font-weight: bold;
+    border: 2px solid #f97a00;
+    background-color: #f97a00;
+    border-radius: 12px;
+    box-shadow:  4px 4px 0 rgba(31, 31, 31, 0.5) , 0 6px 8px 0 rgba(0, 0, 0, 0.7);
+    width: 170px;
+    height: 50px; 
+}
+.cv a{
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+}
+.home-content img{ 
+    animation: pic 10s linear  infinite  ;
+
+}
+@keyframes pic {
+    
+    0%{
+        filter: blur(80%);
+        /* transform:rotatey('0deg'); */
+    }
+    25%{
+        filter: hue-rotate(70%);
+        
+    }
+    50%{
+        filter:opacity(40px);
+    }
+    75%{
+        
+        filter: grayscale(100%);
+    }
+    100%{
+        filter: brightness(300px);
+        
+        /* transform: rotatey(360deg); */
+    } 
+}
+.section{
+    text-align: center;
+    padding: 4rem , 2rem;
+    height: 500px;
+}
+.section-skill{
+    text-align: center;
+    padding: 4rem , 2rem;
+    height: 900px;
+}
+.bg-color{
+    background: linear-gradient(to right , #fae6b0,  #fff);
+    height: 500px;
+}
+.bg-color1{
+     background: linear-gradient(to right , #bbdaab,  #fff);
+    
+}
+#aboat{
+    padding: 5rem;
+}
+#aboat h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+}
+.flex-aboat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(65, 64, 64);
+}
+.flex-aboat #img{
+    border-radius: 50%;
+    margin-left: 200px;
+    border: 4px solid #88a877;
+    
+
+}
+.flex-aboat #h5{
+    text-align:justify;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    font-size: 15px;
+    margin-right: 110px;
+}
+#skill h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 1rem;
+
+}
+#skill #p{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 1.2rem;
+}
+.container{
+    height: 320px;
+    width: 1000px;
+    display: grid;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 160px;
+    position: relative;
+}
+.box{
+    font-size: 1rem;
+    color:rgb(65, 64, 64) ;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #88a877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); 
+}
+.box:hover{
+    transform: scale(1,1.1);
+    border: 5px solid rgba(240, 206, 53, 0.5);
+}
+#project #title{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 2rem;
+}
+#project #para5{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 2rem;
+}
+.project-container{
+    height: 400px;
+    /* width: 1000px; */
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 0px;
+}
+#project .card{
+    background-color: #f7a65b;
+    padding: 1.5rem 2rem;
+    margin: 0 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+}
+.card .pragraf{
+    text-align: justify;
+    font-size: 1rem
+}
+.card a{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 5rem;
+
+}
+.card a:hover{
+    color:#3a7e49;
+    text-decoration: underline;   
+}
+#contact h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 2rem;
+}
+#contact p{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 1.5rem;
+}
+.contact-adress{
+   text-align: center;
+}
+
+.contact-adress p{
+    display: inline-block;
+    font-size: 1px;
+    margin-bottom: 8px;
+}
+ .icon >ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: rgb(53, 52, 52);
+}
+.icon >ul a:hover{
+    color: #2c6337;
+}
+footer{
+    background: linear-gradient(to right , #b8d4a9 , #fff);
+    padding: 1rem 0;
+    text-align: center;
+    font-family:'Poppins', Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 1rem;
+}
+
+ }
+    
+
+@media screen and (max-width:767px) {
+   *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+}
+header{
+    background: linear-gradient(to right , #c1dbb3 , #fff);
+    padding: 1rem 0;
+}
+.container1{
+   display: flex;
+   margin: auto;
+   justify-content: space-between;
+   align-items: center;
+   width: 92%;
+   height: 40px;
+   /* flex-wrap: wrap; */
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+    font-family: 'Nunito' , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+nav a:hover{
+    color: #f97a00;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+}
+#home{
+    background: linear-gradient(to right , #faedca,  #fff);
+    color: rgb(61, 59, 59);
+    height: 700px;
+    
+    
+}
+.home-content img{
+    border-radius: 50%;
+    /* width: 350px; */
+    margin-left: 900px;
+    margin-top: 180px;
+}
+.home-content{
+    position: relative;
+}
+.para{
+    font-size: 20px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -930px;
+    margin-top: 150px;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+}
+.para1{
+    font-size: 25px;
+    font-family: 'Poppins' ,Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -930px;
+    margin-top: 230px;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+}
+.color{
+    color: #f97a00;
+}
+.para2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin-left: -930px;
+    margin-top: 300px;
+    text-align: justify;
+    color: rgb(65, 64, 64);
+    display: inline-block;
+    position: absolute;
+    
+}
+.cv{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 250px;
+    font-weight: bold;
+    border: 2px solid #f97a00;
+    background-color: #f97a00;
+    border-radius: 12px;
+    box-shadow:  4px 4px 0 rgba(31, 31, 31, 0.5) , 0 6px 8px 0 rgba(0, 0, 0, 0.7);
+    width: 170px;
+    height: 50px; 
+}
+.cv a{
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+}
+.home-content img{ 
+    animation: pic 10s linear  infinite  ;
+
+}
+@keyframes pic {
+    
+    0%{
+        filter: blur(80%);
+        /* transform:rotatey('0deg'); */
+    }
+    25%{
+        filter: hue-rotate(70%);
+        
+    }
+    50%{
+        filter:opacity(40px);
+    }
+    75%{
+        
+        filter: grayscale(100%);
+    }
+    100%{
+        filter: brightness(300px);
+        
+        /* transform: rotatey(360deg); */
+    } 
+}
+.section{
+    text-align: center;
+    padding: 4rem , 2rem;
+    height: 500px;
+}
+.section-skill{
+    text-align: center;
+    padding: 4rem , 2rem;
+    height: 900px;
+}
+.bg-color{
+    background: linear-gradient(to right , #fae6b0,  #fff);
+    height: 500px;
+}
+.bg-color1{
+     background: linear-gradient(to right , #bbdaab,  #fff);
+    
+}
+#aboat{
+    padding: 5rem;
+}
+#aboat h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+}
+.flex-aboat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(65, 64, 64);
+}
+.flex-aboat #img{
+    border-radius: 50%;
+    margin-left: 200px;
+    border: 4px solid #88a877;
+    
+
+}
+.flex-aboat #h5{
+    text-align:justify;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    font-size: 15px;
+    margin-right: 110px;
+}
+#skill h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 1rem;
+
+}
+#skill #p{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 1.2rem;
+}
+.container{
+    height: 320px;
+    width: 1000px;
+    display: grid;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 160px;
+    position: relative;
+}
+.box{
+    font-size: 1rem;
+    color:rgb(65, 64, 64) ;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #88a877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); 
+}
+.box:hover{
+    transform: scale(1,1.1);
+    border: 5px solid rgba(240, 206, 53, 0.5);
+}
+#project #title{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 2rem;
+}
+#project #para5{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 2rem;
+}
+.project-container{
+    height: 400px;
+    /* width: 1000px; */
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 0px;
+}
+#project .card{
+    background-color: #f7a65b;
+    padding: 1.5rem 2rem;
+    margin: 0 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+}
+.card .pragraf{
+    text-align: justify;
+    font-size: 1rem
+}
+.card a{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 5rem;
+
+}
+.card a:hover{
+    color:#3a7e49;
+    text-decoration: underline;   
+}
+#contact h1{
+    font-size: 30px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: #f97a00;
+    padding: 2rem;
+}
+#contact p{
+    font-size: 16px;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-bottom: 1.5rem;
+}
+.contact-adress{
+   text-align: center;
+}
+
+.contact-adress p{
+    display: inline-block;
+    font-size: 1px;
+    margin-bottom: 8px;
+}
+ .icon >ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: rgb(53, 52, 52);
+}
+.icon >ul a:hover{
+    color: #2c6337;
+}
+footer{
+    background: linear-gradient(to right , #b8d4a9 , #fff);
+    padding: 1rem 0;
+    text-align: center;
+    font-family:'Poppins', Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 1rem;
+}
+}
